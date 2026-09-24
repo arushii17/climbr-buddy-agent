@@ -1,0 +1,367 @@
+SAMPLE RUN 3 — RECENTLY FUNDED SOFTWARE STARTUPS
+
+Goal:
+Find 3 recently funded software startups that could be relevant prospects
+for Climbr Agency. Research their public digital presence and growth signals,
+then evaluate whether the available evidence suggests a potential digital
+agency opportunity.
+
+Purpose:
+This run demonstrates normal autonomous execution with the deliberately
+simulated failure disabled. It also shows how Climbr Buddy handles a
+real-world company-resolution failure by safely falling back to the
+original discovery source instead of guessing an official website or
+terminating execution.
+
+======================================================================
+EXECUTION PLAN
+======================================================================
+
+Goal:
+Find 3 recently funded software startups suitable for Climbr Agency's services.
+
+Strategy:
+Search for recently funded software startups, analyze their online presence,
+and evaluate their potential need for digital agency services.
+
+Steps:
+
+1. Search for recently funded software startups.
+   Tool: web_search
+   Why: Identify potential leads that meet the criteria of being startups
+   with recent funding.
+
+2. Research the websites of the identified startups.
+   Tool: website_reader
+   Why: Gather insights into their digital presence, offerings, and
+   growth signals.
+
+3. Evaluate the potential for digital agency opportunities.
+   Tool: lead_scorer
+   Why: Score the startups to determine their suitability as leads for
+   Climbr Agency.
+
+4. Compile a report summarizing the findings and recommendations.
+
+======================================================================
+EXECUTION TRANSCRIPT
+======================================================================
+
+[SYSTEM] Climbr Buddy started.
+
+[PLANNER] Creating plan for recently funded software startup research.
+
+[LLM] Calling Backboard (openrouter/openai/gpt-4o-mini)
+[LLM] Backboard response received.
+[PLANNER] Plan successfully generated.
+
+[EXECUTOR] Beginning autonomous plan execution.
+[EXECUTOR] Generating search strategy.
+
+[LLM] Calling Backboard (openrouter/openai/gpt-4o-mini)
+[LLM] Backboard response received.
+
+[EXECUTOR] Generated search query:
+recently funded early-stage SaaS startups 2026 growth traction news
+
+[TOOL] Calling web_search(
+'recently funded early-stage SaaS startups 2026 growth traction news'
+)
+
+[TOOL] web_search returned 10 results.
+
+[DISCOVERY] Reading discovery sources before extracting company candidates.
+
+[DISCOVERY] Reading discovery source 1/6:
+https://fundraiseinsider.com/blog/recently-funded-saas-startups/
+
+[TOOL] Successfully read discovery source.
+
+[DISCOVERY] Reading discovery source 2/6:
+https://growthlist.co/list-of-funded-saas-startups/
+
+[TOOL] Successfully read discovery source.
+
+[DISCOVERY] Reading discovery source 3/6:
+https://www.vcbacked.co/directory/industries/saas
+
+[TOOL] Successfully read discovery source.
+
+[DISCOVERY] Reading discovery source 4/6:
+https://growthlist.co/blog/startup-lists/saas-startups/
+
+[TOOL] Successfully read discovery source.
+
+[DISCOVERY] Reading discovery source 5/6:
+https://www.startus-insights.com/innovators-guide/saas-startups/
+
+[TOOL] Successfully read discovery source.
+
+[DISCOVERY] Reading discovery source 6/6:
+https://ahrefs.com/blog/top-saas-startups/
+
+[TOOL] Successfully read discovery source.
+
+[DISCOVERY] Collected 6 discovery sources.
+
+[LLM] Calling Backboard (openrouter/openai/gpt-4o-mini)
+[LLM] Backboard response received.
+
+[DISCOVERY] Extracted 3 actual company candidates.
+
+----------------------------------------------------------------------
+CANDIDATE 1 — HONA
+----------------------------------------------------------------------
+
+[EXECUTOR] Researching candidate 1/3: Hona
+
+[TOOL] Resolving official website for Hona.
+[TOOL] Verifying 6 possible website matches for Hona.
+
+[LLM] Calling Backboard (openrouter/openai/gpt-4o-mini)
+[LLM] Backboard response received.
+
+[TOOL] Verified official website for Hona:
+https://www.hona.com/
+
+[TOOL] Verification reason:
+The website matches the company name Hona and describes a client
+communication platform for law firms, aligning with the discovery context.
+
+[EXECUTOR] Using verified company website:
+https://www.hona.com/
+
+[TOOL] Calling website_reader(
+'https://www.hona.com/'
+)
+
+[TOOL] Successfully read:
+https://www.hona.com/
+
+[ANALYSIS] Analysing evidence for Hona.
+
+[LLM] Calling Backboard (openrouter/openai/gpt-4o-mini)
+[LLM] Backboard response received.
+
+[TOOL] Scoring lead: Hona
+
+----------------------------------------------------------------------
+CANDIDATE 2 — MELIO
+----------------------------------------------------------------------
+
+[EXECUTOR] Researching candidate 2/3: Melio
+
+[TOOL] Resolving official website for Melio.
+[TOOL] Verifying 6 possible website matches for Melio.
+
+[LLM] Calling Backboard (openrouter/openai/gpt-4o-mini)
+[LLM] Backboard response received.
+
+[TOOL] Verified official website for Melio:
+https://melio.com/
+
+[TOOL] Verification reason:
+The website title and snippet identify Melio as business payment software
+for small businesses, matching the discovery context.
+
+[EXECUTOR] Using verified company website:
+https://melio.com/
+
+[TOOL] Calling website_reader(
+'https://melio.com/'
+)
+
+[TOOL] Successfully read:
+https://melio.com/
+
+[ANALYSIS] Analysing evidence for Melio.
+
+[LLM] Calling Backboard (openrouter/openai/gpt-4o-mini)
+[LLM] Backboard response received.
+
+[TOOL] Scoring lead: Melio
+
+----------------------------------------------------------------------
+CANDIDATE 3 — STORMY
+----------------------------------------------------------------------
+
+[EXECUTOR] Researching candidate 3/3: Stormy
+
+[TOOL] Resolving official website for Stormy.
+
+[ERROR] Company website resolution search failed:
+No results found.
+
+[RECOVERY] Official website could not be confidently verified.
+Using discovery source.
+
+[TOOL] Calling website_reader(
+'https://www.vcbacked.co/directory/industries/saas'
+)
+
+[TOOL] Successfully read:
+https://www.vcbacked.co/directory/industries/saas
+
+[ANALYSIS] Analysing evidence for Stormy.
+
+[LLM] Calling Backboard (openrouter/openai/gpt-4o-mini)
+[LLM] Backboard response received.
+
+[TOOL] Scoring lead: Stormy
+
+[EXECUTOR] Execution completed with 3 researched leads.
+
+[REPORTER] Generating final structured report.
+
+[LLM] Calling Backboard (openrouter/openai/gpt-4o-mini)
+[LLM] Backboard response received.
+
+[REPORTER] Markdown report saved successfully.
+[REPORTER] JSON result saved successfully.
+
+======================================================================
+FINAL REPORT
+======================================================================
+
+# Climbr Buddy Lead Research Report
+
+## Goal
+
+To find 3 recently funded software startups that could be relevant
+prospects for Climbr Agency by researching their public digital presence
+and growth signals, and evaluating their potential for digital agency
+opportunities.
+
+## Execution Summary
+
+The research involved identifying recently funded software startups,
+analyzing their online presence, and determining their suitability as
+leads for Climbr Agency.
+
+Three leads were evaluated based on relevance, digital presence, growth
+signals, and the available evidence for digital agency services.
+
+## Lead Findings
+
+### Lead 1: Hona
+
+Lead Score:
+75
+
+Confidence:
+High
+
+Why it may be relevant:
+Fits Climbr's target market as a client communication platform for law firms.
+
+Supporting Evidence:
+- Raised a $9.5M Series A in June 2024, indicating growth and funding.
+- 500+ law firms trust Hona, showing customer traction.
+
+Potential Opportunity:
+No clear agency opportunity identified from available evidence.
+
+Source:
+https://www.hona.com/
+
+
+### Lead 2: Melio
+
+Lead Score:
+75
+
+Confidence:
+High
+
+Why it may be relevant:
+Fits Climbr's target market as a B2B payments platform for small businesses.
+
+Supporting Evidence:
+- Organic traffic grew approximately 710% over the past year.
+- Melio allows small businesses to manage payments digitally.
+
+Potential Opportunity:
+No clear agency opportunity identified from available evidence.
+
+Source:
+https://melio.com/
+
+
+### Lead 3: Stormy
+
+Lead Score:
+55
+
+Confidence:
+Medium
+
+Why it may be relevant:
+Fits the SaaS sector, which is a target market for Climbr Agency.
+
+Supporting Evidence:
+- Raised funding in September 2025 and operates as an AI productivity tool.
+- Shows promise within the SaaS sector relevant to Climbr's services.
+
+Potential Opportunity:
+No clear agency opportunity identified from available evidence.
+
+Source:
+https://www.vcbacked.co/directory/industries/saas
+
+
+## Limitations
+
+The evaluation was based solely on available public information.
+
+No actionable agency opportunities were identified for the three leads.
+The findings may change as the companies develop and additional public
+information becomes available.
+
+## Conclusion
+
+Three recently funded software startups were identified:
+
+- Hona
+- Melio
+- Stormy
+
+All three showed some evidence of relevance or growth, but the available
+evidence did not establish a clear digital-agency service need.
+
+Further research would be required before treating the companies as
+qualified outreach opportunities.
+
+======================================================================
+REAL-WORLD RECOVERY BEHAVIOUR
+======================================================================
+
+This run was executed with:
+
+python app.py --max-leads 3 --no-simulated-failure
+
+Therefore, the deliberately induced website timeout was disabled.
+
+The first two companies, Hona and Melio, had their official websites
+successfully verified and researched.
+
+For the third candidate, Stormy, the official website resolution search
+returned no results:
+
+[ERROR] Company website resolution search failed: No results found.
+
+Instead of guessing a website or terminating the workflow, the agent
+used its safe fallback:
+
+[RECOVERY] Official website could not be confidently verified.
+Using discovery source.
+
+The discovery source was successfully read and the agent continued with
+evidence analysis, scoring, and report generation.
+
+This demonstrates graceful degradation when live public-web information
+cannot be confidently resolved, without relying on the assignment's
+deliberately simulated failure.
+
+======================================================================
+END OF SAMPLE RUN 3
+======================================================================

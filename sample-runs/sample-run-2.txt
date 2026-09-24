@@ -1,0 +1,388 @@
+SAMPLE RUN 2 — B2B SAAS LEAD RESEARCH
+
+Goal:
+Find 3 growing B2B SaaS companies that could be potential clients for
+Climbr Agency. Research their public digital presence, identify evidence
+of growth or customer traction, and determine whether the available
+evidence suggests a potential opportunity for Climbr.
+
+Purpose:
+This run demonstrates Climbr Buddy adapting its autonomous research workflow
+to a B2B SaaS lead-generation objective. It also demonstrates recovery from
+both a real discovery-source timeout and the deliberately simulated website
+timeout used to test self-correction.
+
+======================================================================
+EXECUTION PLAN
+======================================================================
+
+Goal:
+Identify 3 growing B2B SaaS companies as potential clients for Climbr Agency.
+
+Strategy:
+Discover B2B SaaS companies, research their digital presence for signs of
+growth, and evaluate them as potential leads for Climbr Agency.
+
+Steps:
+
+1. Perform a web search to identify growing B2B SaaS companies.
+   Tool: web_search
+   Why: Find potential B2B SaaS companies showing signs of growth.
+
+2. Research the websites of the identified companies.
+   Tool: website_reader
+   Why: Analyze their digital presence and available evidence of growth
+   or traction.
+
+3. Evaluate the gathered evidence.
+   Tool: lead_scorer
+   Why: Assess the identified companies based on fit and growth potential.
+
+4. Compile a report summarizing the findings and scores.
+
+======================================================================
+EXECUTION TRANSCRIPT
+======================================================================
+
+[SYSTEM] Climbr Buddy started.
+
+[PLANNER] Creating plan for B2B SaaS lead-research goal.
+
+[LLM] Calling Backboard (openrouter/openai/gpt-4o-mini)
+[LLM] Backboard response received.
+[PLANNER] Plan successfully generated.
+
+[EXECUTOR] Beginning autonomous plan execution.
+[EXECUTOR] Generating search strategy.
+
+[LLM] Calling Backboard (openrouter/openai/gpt-4o-mini)
+[LLM] Backboard response received.
+
+[EXECUTOR] Generated search query:
+emerging B2B SaaS startups 2026 growth funding traction customer acquisition
+
+[TOOL] Calling web_search(
+'emerging B2B SaaS startups 2026 growth funding traction customer acquisition'
+)
+
+[TOOL] web_search returned 12 results.
+
+[DISCOVERY] Reading discovery sources before extracting company candidates.
+
+[DISCOVERY] Reading discovery source 1/6:
+https://leadmagic.io/funded-startups/b2b-saas
+
+[TOOL] Successfully read discovery source.
+
+[DISCOVERY] Reading discovery source 2/6:
+https://techstartups.com/2026/09/21/key-trends-shaping-b2b-saas-growth-for-startups/
+
+[RECOVERY] Could not read discovery source:
+Read timed out. (read timeout=10).
+
+[RECOVERY] Using search snippet instead.
+
+[DISCOVERY] Reading discovery source 3/6:
+https://fundraiseinsider.com/blog/b2b-saas-companies/
+
+[TOOL] Successfully read discovery source.
+
+[DISCOVERY] Reading discovery source 4/6:
+https://growthlist.co/list-of-funded-saas-startups/
+
+[TOOL] Successfully read discovery source.
+
+[DISCOVERY] Reading discovery source 5/6:
+https://startupwired.com/2026/02/14/top-b2b-saas-startups-to-track-in-2026/
+
+[TOOL] Successfully read discovery source.
+
+[DISCOVERY] Reading discovery source 6/6:
+https://agentjesse.ai/lists/100-b2b-saas-companies-that-raised-funding-in-2026
+
+[TOOL] Successfully read discovery source.
+
+[DISCOVERY] Collected 6 discovery sources.
+
+[LLM] Calling Backboard (openrouter/openai/gpt-4o-mini)
+[LLM] Backboard response received.
+
+[DISCOVERY] Extracted 3 actual company candidates.
+
+----------------------------------------------------------------------
+CANDIDATE 1 — COGENT SECURITY
+----------------------------------------------------------------------
+
+[EXECUTOR] Researching candidate 1/3: Cogent Security
+
+[TOOL] Resolving official website for Cogent Security.
+[TOOL] Rejected non-company domain: crunchbase.com.
+[TOOL] Verifying 6 possible website matches for Cogent Security.
+
+[LLM] Calling Backboard (openrouter/openai/gpt-4o-mini)
+[LLM] Backboard response received.
+
+[TOOL] Verified official website for Cogent Security:
+https://cogentsecurity.ai/
+
+[EXECUTOR] Using verified company website:
+https://cogentsecurity.ai/
+
+[TOOL] Calling website_reader(
+'https://cogentsecurity.ai/'
+)
+
+[ERROR] Simulated website timeout triggered.
+
+[RECOVERY] Detected timeout:
+Simulated timeout for failure-recovery demonstration.
+
+[RECOVERY] Retrying website_reader without simulated failure.
+
+[TOOL] Calling website_reader(
+'https://cogentsecurity.ai/'
+)
+
+[TOOL] Successfully read:
+https://cogentsecurity.ai/
+
+[RECOVERY] Retry succeeded. Continuing execution.
+
+[ANALYSIS] Analysing evidence for Cogent Security.
+
+[LLM] Calling Backboard (openrouter/openai/gpt-4o-mini)
+[LLM] Backboard response received.
+
+[TOOL] Scoring lead: Cogent Security
+
+----------------------------------------------------------------------
+CANDIDATE 2 — NOMAGIC
+----------------------------------------------------------------------
+
+[EXECUTOR] Researching candidate 2/3: Nomagic
+
+[TOOL] Resolving official website for Nomagic.
+[TOOL] Rejected non-company domain: linkedin.com.
+[TOOL] Verifying 6 possible website matches for Nomagic.
+
+[LLM] Calling Backboard (openrouter/openai/gpt-4o-mini)
+[LLM] Backboard response received.
+
+[TOOL] Verified official website for Nomagic:
+https://nomagic.ai/
+
+[EXECUTOR] Using verified company website:
+https://nomagic.ai/
+
+[TOOL] Calling website_reader(
+'https://nomagic.ai/'
+)
+
+[TOOL] Successfully read:
+https://nomagic.ai/
+
+[ANALYSIS] Analysing evidence for Nomagic.
+
+[LLM] Calling Backboard (openrouter/openai/gpt-4o-mini)
+[LLM] Backboard response received.
+
+[TOOL] Scoring lead: Nomagic
+
+----------------------------------------------------------------------
+CANDIDATE 3 — RUNXIN MICRO TECHNOLOGY
+----------------------------------------------------------------------
+
+[EXECUTOR] Researching candidate 3/3: Runxin Micro Technology
+
+[TOOL] Resolving official website for Runxin Micro Technology.
+[TOOL] Rejected non-company domain: crunchbase.com.
+[TOOL] Verifying 6 possible website matches for Runxin Micro Technology.
+
+[LLM] Calling Backboard (openrouter/openai/gpt-4o-mini)
+[LLM] Backboard response received.
+
+[TOOL] Verified official website for Runxin Micro Technology:
+http://www.runxinmicro.com/
+
+[EXECUTOR] Using verified company website:
+http://www.runxinmicro.com/
+
+[TOOL] Calling website_reader(
+'http://www.runxinmicro.com/'
+)
+
+[TOOL] Successfully read:
+http://www.runxinmicro.com/
+
+[ANALYSIS] Analysing evidence for Runxin Micro Technology.
+
+[LLM] Calling Backboard (openrouter/openai/gpt-4o-mini)
+[LLM] Backboard response received.
+
+[TOOL] Scoring lead: Runxin Micro Technology
+
+[EXECUTOR] Execution completed with 3 researched leads.
+
+[REPORTER] Generating final structured report.
+
+[LLM] Calling Backboard (openrouter/openai/gpt-4o-mini)
+[LLM] Backboard response received.
+
+[REPORTER] Markdown report saved successfully.
+[REPORTER] JSON result saved successfully.
+
+======================================================================
+FINAL REPORT
+======================================================================
+
+# Climbr Buddy Lead Research Report
+
+## Goal
+
+Identify 3 growing B2B SaaS companies as potential clients for Climbr
+Agency, focusing on their public digital presence to find signs of growth
+and customer traction.
+
+## Execution Summary
+
+The research involved identifying promising B2B SaaS companies, analyzing
+their websites for growth indicators, and assessing their potential as
+clients for Climbr Agency.
+
+Three companies were evaluated.
+
+## Lead Findings
+
+### Lead 1: Cogent Security
+
+Lead Score:
+75
+
+Confidence:
+High
+
+Why it may be relevant:
+Cogent Security fits Climbr's target market and has an established
+digital presence.
+
+Supporting Evidence:
+- Raised between $30–50M in Series A funding in February 2026.
+- Offers a range of technology and security services indicating
+  operational capacity.
+
+Potential Opportunity:
+No clear agency opportunity identified from available evidence.
+
+Source:
+https://cogentsecurity.ai/
+
+
+### Lead 2: Nomagic
+
+Lead Score:
+75
+
+Confidence:
+High
+
+Why it may be relevant:
+Nomagic falls within Climbr's target demographic and maintains a solid
+digital presence.
+
+Supporting Evidence:
+- Raised between $10–15M in Series B funding in February 2026.
+- Specializes in warehouse automation through AI technology.
+
+Potential Opportunity:
+No clear agency opportunity identified from available evidence.
+
+Source:
+https://nomagic.ai/
+
+
+### Lead 3: Runxin Micro Technology
+
+Lead Score:
+75
+
+Confidence:
+High
+
+Why it may be relevant:
+Runxin Micro Technology aligns with Climbr's market focus and has a
+recognized digital presence.
+
+Supporting Evidence:
+- Raised between $50–100M in Series B funding in February 2026.
+- Based in China, indicating geographical diversity.
+
+Potential Opportunity:
+No clear agency opportunity identified from available evidence.
+
+Source:
+http://www.runxinmicro.com/
+
+
+## Limitations
+
+The research was based on publicly available information. Although the
+identified companies show signs of growth, no specific opportunities for
+agency services were evident.
+
+The conclusions are drawn from limited digital evidence, and further
+research or direct inquiry may be required for a more comprehensive
+understanding.
+
+## Conclusion
+
+Three potential leads were identified:
+
+- Cogent Security
+- Nomagic
+- Runxin Micro Technology
+
+The companies demonstrated funding activity and public digital presence,
+but the available evidence did not establish an immediate agency-service
+need.
+
+======================================================================
+RECOVERY BEHAVIOUR
+======================================================================
+
+This run demonstrated two forms of failure handling.
+
+1. REAL DISCOVERY-SOURCE FAILURE
+
+A public discovery page timed out while being read:
+
+[RECOVERY] Could not read discovery source:
+Read timed out. (read timeout=10).
+
+Instead of terminating execution, the agent used the search-result snippet
+as fallback evidence and continued reading the remaining discovery sources.
+
+
+2. DELIBERATELY SIMULATED TOOL FAILURE
+
+The first candidate's website_reader call intentionally triggered a timeout:
+
+[ERROR] Simulated website timeout triggered.
+
+The agent detected the error and retried:
+
+[RECOVERY] Detected timeout:
+Simulated timeout for failure-recovery demonstration.
+
+[RECOVERY] Retrying website_reader without simulated failure.
+
+The second attempt succeeded:
+
+[TOOL] Successfully read https://cogentsecurity.ai/
+[RECOVERY] Retry succeeded. Continuing execution.
+
+The agent then continued with evidence analysis, lead scoring, and report
+generation without terminating the workflow.
+
+======================================================================
+END OF SAMPLE RUN 2
+======================================================================

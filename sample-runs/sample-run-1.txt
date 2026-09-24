@@ -1,0 +1,391 @@
+SAMPLE RUN 1 — STANDARD LEAD RESEARCH + FAILURE RECOVERY
+
+Goal:
+Find 3 early-stage SaaS companies that could be potential clients for Climbr Agency.
+Research their public websites, identify evidence of their digital presence or growth,
+and explain what potential opportunity may exist for Climbr.
+
+Purpose:
+This run demonstrates the complete autonomous workflow of Climbr Buddy, including
+goal planning, public web search, discovery-source research, company extraction,
+official website verification, website reading, evidence analysis, deterministic
+lead scoring, structured reporting, and recovery from a deliberately simulated
+website timeout.
+
+======================================================================
+EXECUTION PLAN
+======================================================================
+
+Goal:
+Find 3 early-stage SaaS companies that could be potential clients for Climbr Agency.
+
+Strategy:
+The strategy involves discovering promising early-stage SaaS companies, researching
+their digital presence, and evaluating their growth potential to identify suitable
+leads for Climbr Agency.
+
+Steps:
+
+1. Search for early-stage SaaS companies that show signs of digital presence and growth.
+   Tool: web_search
+   Why: Identify potential SaaS companies that might benefit from Climbr Agency's services.
+
+2. Review the websites of the candidates discovered in step 1.
+   Tool: website_reader
+   Why: Analyze their online presence and services offered to assess alignment with
+   Climbr Agency's offerings.
+
+3. Evaluate the evidence of growth and digital presence from the website data.
+   Why: Determine the viability and potential opportunity for partnership with
+   Climbr Agency.
+
+4. Score the leads based on their growth potential and digital presence.
+   Tool: lead_scorer
+   Why: Rank the candidates to identify the best opportunities for Climbr Agency.
+
+5. Compile a report detailing the findings and recommended leads.
+   Why: Provide a concise overview of potential clients for Climbr Agency.
+
+======================================================================
+EXECUTION TRANSCRIPT
+======================================================================
+
+[SYSTEM] Climbr Buddy started.
+
+[PLANNER] Creating plan for goal: Find 3 early-stage SaaS companies that could
+be potential clients for Climbr Agency. Research their public websites, identify
+evidence of their digital presence or growth, and explain what potential
+opportunity may exist for Climbr.
+
+[LLM] Calling Backboard (openrouter/openai/gpt-4o-mini)
+[LLM] Backboard response received.
+[PLANNER] Plan successfully generated.
+
+[EXECUTOR] Beginning autonomous plan execution.
+[EXECUTOR] Generating search strategy.
+
+[LLM] Calling Backboard (openrouter/openai/gpt-4o-mini)
+[LLM] Backboard response received.
+
+[EXECUTOR] Generated search query:
+early-stage SaaS startups funding traction growth launches 2026
+
+[TOOL] Calling web_search(
+'early-stage SaaS startups funding traction growth launches 2026'
+)
+
+[TOOL] web_search returned 7 results.
+
+[DISCOVERY] Reading discovery sources before extracting company candidates.
+
+[DISCOVERY] Reading discovery source 1/6:
+https://www.startus-insights.com/innovators-guide/saas-startups/
+
+[TOOL] Successfully read discovery source.
+
+[DISCOVERY] Reading discovery source 2/6:
+https://fundraiseinsider.com/blog/recently-funded-saas-startups/
+
+[TOOL] Successfully read discovery source.
+
+[DISCOVERY] Reading discovery source 3/6:
+https://www.openvc.app/investor-lists/saas-investors
+
+[TOOL] Successfully read discovery source.
+
+[DISCOVERY] Reading discovery source 4/6:
+https://ahrefs.com/blog/top-saas-startups/
+
+[TOOL] Successfully read discovery source.
+
+[DISCOVERY] Reading discovery source 5/6:
+https://growthlist.co/list-of-funded-saas-startups/
+
+[TOOL] Successfully read discovery source.
+
+[DISCOVERY] Reading discovery source 6/6:
+https://growthlist.co/blog/startup-lists/saas-startups/
+
+[TOOL] Successfully read discovery source.
+
+[DISCOVERY] Collected 6 discovery sources.
+
+[LLM] Calling Backboard (openrouter/openai/gpt-4o-mini)
+[LLM] Backboard response received.
+
+[DISCOVERY] Extracted 3 actual company candidates.
+
+----------------------------------------------------------------------
+CANDIDATE 1 — SHERLOQ
+----------------------------------------------------------------------
+
+[EXECUTOR] Researching candidate 1/3: Sherloq
+
+[TOOL] Resolving official website for Sherloq.
+[TOOL] Verifying 6 possible website matches for Sherloq.
+
+[LLM] Calling Backboard (openrouter/openai/gpt-4o-mini)
+[LLM] Backboard response received.
+
+[WARNING] Could not verify an official website for Sherloq:
+insufficient identity evidence.
+
+[RECOVERY] Official website could not be confidently verified.
+Using discovery source.
+
+[TOOL] Calling website_reader(
+'https://ahrefs.com/blog/top-saas-startups/'
+)
+
+[ERROR] Simulated website timeout triggered.
+
+[RECOVERY] Detected timeout:
+Simulated timeout for failure-recovery demonstration.
+
+[RECOVERY] Retrying website_reader without simulated failure.
+
+[TOOL] Calling website_reader(
+'https://ahrefs.com/blog/top-saas-startups/'
+)
+
+[TOOL] Successfully read:
+https://ahrefs.com/blog/top-saas-startups/
+
+[RECOVERY] Retry succeeded. Continuing execution.
+
+[ANALYSIS] Analysing evidence for Sherloq.
+
+[LLM] Calling Backboard (openrouter/openai/gpt-4o-mini)
+[LLM] Backboard response received.
+
+[TOOL] Scoring lead: Sherloq
+
+----------------------------------------------------------------------
+CANDIDATE 2 — MELIO
+----------------------------------------------------------------------
+
+[EXECUTOR] Researching candidate 2/3: Melio
+
+[TOOL] Resolving official website for Melio.
+[TOOL] Verifying 6 possible website matches for Melio.
+
+[LLM] Calling Backboard (openrouter/openai/gpt-4o-mini)
+[LLM] Backboard response received.
+
+[TOOL] Verified official website for Melio:
+https://melio.com/
+
+[TOOL] Verification reason:
+The title and snippet clearly describe a B2B payments platform, which matches
+the provided company description.
+
+[EXECUTOR] Using verified company website:
+https://melio.com/
+
+[TOOL] Calling website_reader(
+'https://melio.com/'
+)
+
+[TOOL] Successfully read:
+https://melio.com/
+
+[ANALYSIS] Analysing evidence for Melio.
+
+[LLM] Calling Backboard (openrouter/openai/gpt-4o-mini)
+[LLM] Backboard response received.
+
+[TOOL] Scoring lead: Melio
+
+----------------------------------------------------------------------
+CANDIDATE 3 — HONA
+----------------------------------------------------------------------
+
+[EXECUTOR] Researching candidate 3/3: Hona
+
+[TOOL] Resolving official website for Hona.
+[TOOL] Verifying 6 possible website matches for Hona.
+
+[LLM] Calling Backboard (openrouter/openai/gpt-4o-mini)
+[LLM] Backboard response received.
+
+[TOOL] Verified official website for Hona:
+https://www.hona.com/
+
+[TOOL] Verification reason:
+The website mentions Hona as a client communication platform specifically
+designed for law firms, aligning with the discovery context provided about
+Hona's purpose and features.
+
+[EXECUTOR] Using verified company website:
+https://www.hona.com/
+
+[TOOL] Calling website_reader(
+'https://www.hona.com/'
+)
+
+[TOOL] Successfully read:
+https://www.hona.com/
+
+[ANALYSIS] Analysing evidence for Hona.
+
+[LLM] Calling Backboard (openrouter/openai/gpt-4o-mini)
+[LLM] Backboard response received.
+
+[TOOL] Scoring lead: Hona
+
+[EXECUTOR] Execution completed with 3 researched leads.
+
+[REPORTER] Generating final structured report.
+
+[LLM] Calling Backboard (openrouter/openai/gpt-4o-mini)
+[LLM] Backboard response received.
+
+[REPORTER] Markdown report saved to outputs/lead_report_20260924_193819.md
+[REPORTER] JSON result saved to outputs/lead_report_20260924_193819.json
+
+======================================================================
+FINAL REPORT
+======================================================================
+
+# Climbr Buddy Lead Research Report
+
+## Goal
+
+To identify 3 early-stage SaaS companies that could be potential clients
+for Climbr Agency by researching their public websites and assessing their
+digital presence and growth potential.
+
+## Execution Summary
+
+The research involved searching for promising early-stage SaaS companies
+with active online presences and signs of growth. Websites of these
+candidates were analyzed to assess alignment with Climbr Agency's offerings.
+Each lead was evaluated and scored based on growth potential and digital
+presence.
+
+## Lead Findings
+
+### Lead 1: Sherloq
+
+Company:
+Sherloq
+
+Lead Score:
+75
+
+Confidence:
+High
+
+Why it may be relevant:
+Sherloq fits Climbr's target market as a SaaS startup with significant
+digital presence and growth signals.
+
+Supporting Evidence:
+- Raised a $500K pre-seed round from Y Combinator in April 2023.
+- Reported 810% increase in organic traffic.
+
+Potential Opportunity:
+No clear agency opportunity identified from available evidence.
+
+Source:
+https://ahrefs.com/blog/top-saas-startups/
+
+
+### Lead 2: Melio
+
+Company:
+Melio
+
+Lead Score:
+75
+
+Confidence:
+High
+
+Why it may be relevant:
+Melio aligns with Climbr's target market, showing an established digital
+presence and notable traffic growth.
+
+Supporting Evidence:
+- Organic traffic grew approximately 710% over the past year.
+- Offers financial management services for small businesses.
+
+Potential Opportunity:
+No clear agency opportunity identified from available evidence.
+
+Source:
+https://melio.com/
+
+
+### Lead 3: Hona
+
+Company:
+Hona
+
+Lead Score:
+75
+
+Confidence:
+High
+
+Why it may be relevant:
+Hona fits within Climbr's target demographic, with a strong digital presence
+and growth signal from client adoption.
+
+Supporting Evidence:
+- Raised $9.5M in Series A funding.
+- Trusted by over 500 law firms, demonstrating traction.
+
+Potential Opportunity:
+Hona's growing client base suggests a need for enhanced digital marketing
+strategies as they expand services.
+
+Source:
+https://www.hona.com/
+
+
+## Limitations
+
+The evaluation and scoring are based solely on available public information,
+which may not encompass all aspects of company performance or needs.
+
+The identified companies did not show a consistently clear path for agency
+opportunities based on the researched evidence.
+
+## Conclusion
+
+Three potential leads were identified: Sherloq, Melio, and Hona.
+
+Each showed alignment with Climbr Agency's target market and evidence of
+digital presence or growth. However, public evidence alone was insufficient
+to establish a clear agency-service need for every company, so further
+research or outreach would be required before treating them as qualified
+sales opportunities.
+
+======================================================================
+FAILURE-RECOVERY DEMONSTRATION
+======================================================================
+
+The deliberately induced failure occurred while researching the first
+candidate.
+
+Sequence:
+
+1. website_reader was called.
+2. A simulated timeout was triggered.
+3. The agent detected and logged the failure.
+4. The agent retried website_reader without the simulated failure.
+5. The retry succeeded.
+6. Autonomous execution continued normally.
+
+Observed log:
+
+[ERROR] Simulated website timeout triggered.
+[RECOVERY] Detected timeout: Simulated timeout for failure-recovery demonstration.
+[RECOVERY] Retrying website_reader without simulated failure.
+[TOOL] Successfully read https://ahrefs.com/blog/top-saas-startups/
+[RECOVERY] Retry succeeded. Continuing execution.
+
+======================================================================
+END OF SAMPLE RUN 1
+======================================================================
